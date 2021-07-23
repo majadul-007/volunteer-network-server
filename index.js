@@ -73,6 +73,9 @@ client.connect(err => {
     })
     console.log("database connected");
 });
+app.get('/', (req, res) => {
+  res.send('Hello World! Tusar Haque')
+})
 
 // app.listen(8000, () => {
 // 	console.log('Server Works !!! At port 8000');
