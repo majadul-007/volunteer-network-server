@@ -77,3 +77,4 @@ client.connect(err => {
 // app.listen(8000, () => {
 // 	console.log('Server Works !!! At port 8000');
 // });
+app.listen(process.env.PORT || 5000);
