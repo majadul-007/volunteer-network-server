@@ -20,8 +20,8 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 client.connect(err => {
   console.log(err);
   //const activitiesCollection = client.db(`${process.env.DB_NAME}`).collection("Activities");
-  const activitiesCollection = client.db("VolunteerMain").collection("Activities");
-  const registerVolunteerCollection = client.db("VolunteerMain").collection("Registration");
+  const activitiesCollection = client.db("volunteer").collection("Activities");
+  const registerVolunteerCollection = client.db("volunteer").collection("Registration");
   // const registerVolunteerCollection = client.db(`${process.env.DB_NAME}`).collection("Registration");
 
 
