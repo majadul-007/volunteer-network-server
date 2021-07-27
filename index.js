@@ -18,9 +18,10 @@ app.use(cors());
 
 const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology: true });
 client.connect(err => {
+  console.log(err);
   //const activitiesCollection = client.db(`${process.env.DB_NAME}`).collection("Activities");
-  const activitiesCollection = client.db(`${process.env.DB_NAME}`).collection(`Activities`);
-  const registerVolunteerCollection = client.db(`${process.env.DB_NAME}`).collection(`Registration`);
+  const activitiesCollection = client.db("VolunteerMain").collection("Activities");
+  const registerVolunteerCollection = client.db("VolunteerMain").collection("Registration");
   // const registerVolunteerCollection = client.db(`${process.env.DB_NAME}`).collection("Registration");
 
 
